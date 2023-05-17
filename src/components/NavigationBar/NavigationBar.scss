@@ -1,0 +1,38 @@
+#NavigationBar {
+    background-color: #2D3142;
+
+    Button{
+        border: none;
+    }
+
+    .btnUser{
+        .btnRegister{
+            background-color: #EF8354;
+        }
+
+        .btnRegister:hover{
+            background-color: #eb7441;
+        }
+    
+        .btnLogin{
+            background-color: transparent;
+        }
+
+        .btnLogin:hover{
+            background-color: #161927;
+        }
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .desktopLink {
+        
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+
+}
