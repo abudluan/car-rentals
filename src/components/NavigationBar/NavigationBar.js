@@ -29,14 +29,17 @@ const NavigationBar = () => {
                         <Nav.Link href="#home" >
                             Home
                         </Nav.Link>
+                        <Nav.Link href="#services" >
+                            Sobre
+                        </Nav.Link>
                         <Nav.Link href="#about" >
-                            About
+                            Veículos
                         </Nav.Link>
                         <Nav.Link href="#services" >
-                            Services
+                            Depoimentos
                         </Nav.Link>
                         <Nav.Link href="#contact" >
-                            Contact
+                            Contato
                         </Nav.Link>
                     </Nav>
 

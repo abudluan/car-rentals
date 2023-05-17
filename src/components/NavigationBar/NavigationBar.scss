@@ -32,6 +32,10 @@
         text-decoration: none;
     }
 
+    a:hover{
+        color: #EF8354;
+    }
+
     .desktopLink {
         
         @media (max-width: 991px) {
