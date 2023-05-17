@@ -48,7 +48,7 @@ const NavigationBar = () => {
                 </Navbar.Collapse>
 
                 <Offcanvas show={showOffcanvas} onHide={() => setShowOffcanvas(false)}>
-                    <Offcanvas.Header style={{ backgroundColor: '#2D3142', color: 'white', }} >
+                    <Offcanvas.Header style={{ backgroundColor: '#2D3142', color: 'white', borderBottom: '1px white solid' }} >
                         <Offcanvas.Title>Menu</Offcanvas.Title>
                         <CloseButton variant="white" onClick={handleLinkClick}/>
                     </Offcanvas.Header>
