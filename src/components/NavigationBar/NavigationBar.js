@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, CloseButton, Button, Offcanvas } from 'react-bootstrap';
+import { FaBars } from 'react-icons/fa';
 import './NavigationBar.scss';
 
 const NavigationBar = () => {
@@ -20,7 +21,9 @@ const NavigationBar = () => {
 
             <Navbar className='container' expand="lg">
                 <Navbar.Brand className='mx-2' href="#">Logo</Navbar.Brand>
-                <Navbar.Toggle className='mx-2' onClick={handleToggleOffcanvas} />
+                <Navbar.Toggle style={{color: '#9698a1'}}  className='mx-2' onClick={handleToggleOffcanvas} >
+                <FaBars className="toggle" />
+                </Navbar.Toggle>
                 <Navbar.Collapse className='desktopLink' >
                     <Nav className="me-auto">
                         <Nav.Link href="#home" >
