@@ -3,6 +3,8 @@ import { Navbar, Nav, CloseButton, Button, Offcanvas } from 'react-bootstrap';
 import { FaBars } from 'react-icons/fa';
 import './NavigationBar.scss';
 
+import NavLogo from '../img/Navbar/NavLogo.png';
+
 const NavigationBar = () => {
 
     const [showOffcanvas, setShowOffcanvas] = useState(false);
@@ -20,12 +22,12 @@ const NavigationBar = () => {
         <section id='NavigationBar'>
 
             <Navbar className='container' expand="lg">
-                <Navbar.Brand className='mx-2' href="#">Logo</Navbar.Brand>
+                <img className='img-fluid mx-2' src={NavLogo} alt=''/>
                 <Navbar.Toggle style={{color: '#9698a1'}}  className='mx-2' onClick={handleToggleOffcanvas} >
                 <FaBars className="toggle" />
                 </Navbar.Toggle>
                 <Navbar.Collapse className='desktopLink' >
-                    <Nav className="me-auto">
+                    <Nav className="me-auto mx-auto">
                         <Nav.Link href="#home" >
                             Home
                         </Nav.Link>

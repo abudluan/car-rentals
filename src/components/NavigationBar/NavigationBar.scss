@@ -3,10 +3,17 @@
 
     .toggle{
         color: #9698a1;
+        font-size: 1.5em;
+        
     }
 
     Button{
         border: none;
+        padding: 1em;
+    }
+
+    img{
+        max-height: 6em;
     }
 
     .btnUser{
@@ -15,7 +22,7 @@
         }
 
         .btnRegister:hover{
-            background-color: #eb7441;
+            background-color: #e2652f;
         }
     
         .btnLogin{
