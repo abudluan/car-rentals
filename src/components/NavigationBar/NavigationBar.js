@@ -63,13 +63,16 @@ const NavigationBar = () => {
                                 Home
                             </Nav.Link>
                             <Nav.Link href="#about" onClick={handleLinkClick}>
-                                About
+                                Sobre
                             </Nav.Link>
                             <Nav.Link href="#services" onClick={handleLinkClick}>
-                                Services
+                                Veículos
                             </Nav.Link>
                             <Nav.Link href="#contact" onClick={handleLinkClick}>
-                                Contact
+                                Depoimentos
+                            </Nav.Link>
+                            <Nav.Link href="#contact" onClick={handleLinkClick}>
+                                Contato
                             </Nav.Link>
                             <Button style={{backgroundColor: '#161927', border: 'none'}} className="btnLogin mb-2 mt-2">Entrar</Button>
                             <Button style={{backgroundColor: '#EF8354', border: 'none'}} className="btnRegister">Registrar-se</Button>
