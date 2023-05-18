@@ -1,0 +1,67 @@
+#home{
+    
+    
+
+    .sec1{
+        text-align: center;
+        margin: auto;
+        margin-top: 8em;
+        
+
+        .text-Carro{
+            
+            margin-top: auto;
+
+            h4{
+                text-align: left;
+                font-weight: bold;
+                font-size: 1.4em;
+            }
+    
+            h1{
+                text-align: left;
+                font-weight: bold;
+    
+                .markText{
+                    color: #EF8354;
+                }
+            }
+
+            p{
+                text-align: left;
+            }
+
+            @media (max-width: 991px){
+                
+                h4{
+                    text-align: center;
+                    font-size: 1.2em;
+                }
+
+                h1{
+                    text-align: center;
+                }
+
+                P{
+                    text-align: center;
+                }
+            }
+        }
+
+        
+        .img-Carro{
+
+            img{
+                max-height: 25em;
+            }
+
+            @media (max-width: 991px ){
+                display: none;
+            }
+        }
+
+
+        
+        
+    }
+}
