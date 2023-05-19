@@ -1,11 +1,13 @@
 #home{
     
-    
-
     .sec1{
         text-align: center;
         margin: auto;
-        margin-top: 8em;
+        margin-top: 5em;
+
+        @media (max-width:991px){
+            margin-top: 2em;
+        }
         
 
         .text-Carro{
@@ -16,6 +18,11 @@
                 text-align: left;
                 font-weight: bold;
                 font-size: 1.4em;
+
+                @media (max-width: 991px){
+                    text-align: center;
+                    font-size: 1.2em;
+                }
             }
     
             h1{
@@ -25,34 +32,60 @@
                 .markText{
                     color: #EF8354;
                 }
+
+                @media (max-width: 991px){
+                    text-align: center;
+
+                }
             }
 
             p{
                 text-align: left;
-            }
-
-            @media (max-width: 991px){
-                
-                h4{
+                @media (max-width: 991px){
                     text-align: center;
-                    font-size: 1.2em;
-                }
 
-                h1{
-                    text-align: center;
-                }
-
-                P{
-                    text-align: center;
                 }
             }
+
+            .btnReserve{
+                background-color: #EF8354;
+                border-color: #EF8354;
+            }
+
+            .btnReserve:hover{
+                background-color: #e2652f;
+                border-color: #EF8354;
+            }
+
+            .btnLearnMore{
+                background-color: transparent;
+                border-color: #2D3142;
+                color: black;
+            }
+
+            .btnLearnMore:hover{
+                background-color: #2D3142;
+                color: white;
+            }
+
+            
+            
         }
 
         
+        
         .img-Carro{
-
+            background-image: url('./img/Home/sec1-bg.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-x: 10em;
+            border-radius: 10px;
+            height: 50vh;
+            
             img{
                 max-height: 25em;
+                margin-top: 4em;
             }
 
             @media (max-width: 991px ){

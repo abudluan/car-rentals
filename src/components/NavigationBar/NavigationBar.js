@@ -21,7 +21,7 @@ const NavigationBar = () => {
 
         <section id='NavigationBar'>
 
-            <Navbar className='container' fixed='top' expand="lg">
+            <Navbar className='container' expand="lg">
                 <img className='img-fluid mx-2' src={NavLogo} alt=''/>
                 <Navbar.Toggle style={{color: '#9698a1'}}  className='mx-2' onClick={handleToggleOffcanvas} >
                 <FaBars className="toggle" />
