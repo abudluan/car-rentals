@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import './Home.scss';
 import { Container, Row, Col, Button, Card, ListGroup } from "react-bootstrap";
 import { HiArrowCircleRight, HiCheckCircle } from "react-icons/hi";
@@ -8,6 +8,43 @@ import CarSec1 from './img/Home/car-sec1.png';
 
 
 const Home = () => {
+
+    const containerRef = useRef(null);
+    const [isMouseDown, setIsMouseDown] = useState(false);
+    const [mouseDownX, setMouseDownX] = useState(0);
+    const [scrollLeft, setScrollLeft] = useState(0);
+
+    const handleMouseDown = (event) => {
+        setIsMouseDown(true);
+        setMouseDownX(event.clientX);
+        setScrollLeft(containerRef.current.scrollLeft);
+    };
+
+    const handleMouseMove = (event) => {
+        if (!isMouseDown) return;
+        const delta = event.clientX - mouseDownX;
+        containerRef.current.scrollLeft = scrollLeft - delta;
+    };
+
+    const handleMouseUp = () => {
+        setIsMouseDown(false);
+    };
+
+    const scrollRight = () => {
+        const container = containerRef.current;
+        container.scrollTo({
+            left: container.scrollLeft + container.offsetWidth,
+            behavior: 'smooth',
+        });
+    };
+
+    const ScrollLeft = () => {
+        const container = containerRef.current;
+        container.scrollTo({
+            left: container.scrollLeft - container.offsetWidth,
+            behavior: 'smooth',
+        });
+    };
 
     return (
         <section id='home'>
@@ -40,7 +77,12 @@ const Home = () => {
 
 
             <Container className="sec2">
-                <Row className="d-flex flex-nowrap">
+                <Row className="flex-nowrap overflow-auto pb-5"
+                    ref={containerRef}
+                    onMouseDown={handleMouseDown}
+                    onMouseMove={handleMouseMove}
+                    onMouseUp={handleMouseUp}
+                    onMouseLeave={handleMouseUp}>
                     <Col>
                         <Card style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
@@ -57,7 +99,7 @@ const Home = () => {
                                 <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
                             </ListGroup>
                             <Card.Body>
-                                <Button variant="primary">Go somewhere</Button>
+                                <Button variant="primary">Reservar</Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -78,7 +120,7 @@ const Home = () => {
                                 <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
                             </ListGroup>
                             <Card.Body>
-                                <Button variant="primary">Go somewhere</Button>
+                                <Button variant="primary">Reservar</Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -100,7 +142,7 @@ const Home = () => {
                                 <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
                             </ListGroup>
                             <Card.Body>
-                                <Button variant="primary">Go somewhere</Button>
+                                <Button variant="primary">Reservar</Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -121,7 +163,7 @@ const Home = () => {
                                 <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
                             </ListGroup>
                             <Card.Body>
-                                <Button variant="primary">Go somewhere</Button>
+                                <Button variant="primary">Reservar</Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -142,7 +184,7 @@ const Home = () => {
                                 <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
                             </ListGroup>
                             <Card.Body>
-                                <Button variant="primary">Go somewhere</Button>
+                                <Button variant="primary">Reservar</Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -163,7 +205,7 @@ const Home = () => {
                                 <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
                             </ListGroup>
                             <Card.Body>
-                                <Button variant="primary">Go somewhere</Button>
+                                <Button variant="primary">Reservar</Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -184,7 +226,7 @@ const Home = () => {
                                 <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
                             </ListGroup>
                             <Card.Body>
-                                <Button variant="primary">Go somewhere</Button>
+                                <Button variant="primary">Reservar</Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -205,7 +247,7 @@ const Home = () => {
                                 <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
                             </ListGroup>
                             <Card.Body>
-                                <Button variant="primary">Go somewhere</Button>
+                                <Button variant="primary">Reservar</Button>
                             </Card.Body>
                         </Card>
                     </Col>
