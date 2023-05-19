@@ -1,79 +1,80 @@
-#home{
-    
-    .sec1{
+#home {
+
+    .sec1 {
         text-align: center;
         margin-top: 0em;
 
-        @media (max-width:991px){
+        @media (max-width:991px) {
             margin-top: 0em;
         }
-        
 
-        .text-Carro{
-            
+
+        .text-Carro {
+
             margin-top: 5em;
 
-            h4{
+            h4 {
                 text-align: left;
                 font-weight: bold;
                 font-size: 1.4em;
 
-                @media (max-width: 991px){
+                @media (max-width: 991px) {
                     text-align: center;
                     font-size: 1.2em;
                 }
             }
-    
-            h1{
+
+            h1 {
                 text-align: left;
                 font-weight: bold;
-    
-                .markText{
+
+                .markText {
                     color: #EF8354;
                 }
 
-                @media (max-width: 991px){
+                @media (max-width: 991px) {
                     text-align: center;
 
                 }
             }
 
-            p{
+            p {
                 text-align: left;
-                @media (max-width: 991px){
+
+                @media (max-width: 991px) {
                     text-align: center;
 
                 }
             }
 
-            .btnReserve{
+            .btnReserve {
                 background-color: #EF8354;
                 border-color: #EF8354;
             }
 
-            .btnReserve:hover{
+            .btnReserve:hover {
                 background-color: #e2652f;
                 border-color: #EF8354;
             }
 
-            .btnLearnMore{
+            .btnLearnMore {
                 background-color: transparent;
                 border-color: #2D3142;
                 color: black;
             }
 
-            .btnLearnMore:hover{
+            .btnLearnMore:hover {
                 background-color: #2D3142;
                 color: white;
             }
 
-            
-            
+
+
         }
 
-        
-        
-        .img-Carro{
+
+
+        .img-Carro {
             background-image: url('./img/Home/sec1-bg.png');
             background-position: center;
             background-repeat: no-repeat;
@@ -81,19 +82,45 @@
             background-position-x: 8em;
             border-radius: 10px;
             height: 50vh;
-            
-            img{
+
+            img {
                 max-height: 25em;
                 margin-top: 9em;
             }
 
-            @media (max-width: 991px ){
+            @media (max-width: 991px) {
                 display: none;
             }
         }
 
 
+
+
+    }
+
+    .sec2 {
+        margin-top: 4em;
+        text-align: center;
+        overflow-x: auto;
+        padding-bottom: 2em;
+        margin-bottom: 2em;
+
         
+    }
+
+    ::-webkit-scrollbar {
+        width: 0.5em;
+        border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #e2652f;
+        border-radius: 5px;
         
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: rgb(117, 117, 117);
+        border-radius: 5px;
     }
 }
