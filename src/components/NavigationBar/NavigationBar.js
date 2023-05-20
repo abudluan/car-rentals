@@ -35,7 +35,7 @@ const NavigationBar = () => {
                             Sobre
                         </Nav.Link>
                         <Nav.Link href="#about" >
-                            Veículos
+                            Modelos
                         </Nav.Link>
                         <Nav.Link href="#services" >
                             Depoimentos
