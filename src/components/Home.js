@@ -51,6 +51,14 @@ import img1BMW3 from './img/Home/card5/img1-bmw3.jpg';
 import img2BMW3 from './img/Home/card5/img2-bmw3.jpg';
 import img3BMW3 from './img/Home/card5/img3-bmw3.jpg';
 import img4BMW3 from './img/Home/card5/img4-bmw3.jpg';
+
+//Card6
+import img0GTR1 from './img/Home/card6/img0-gtr1.jpg';
+import img1GTR1 from './img/Home/card6/img1-gtr1.jpg';
+import img2GTR1 from './img/Home/card6/img2-gtr1.jpg';
+import img3GTR1 from './img/Home/card6/img3-gtr1.jpg';
+import img4GTR1 from './img/Home/card6/img4-gtr1.jpg';
+
 const Home = () => {
 
     const containerRef = useRef(null);
@@ -545,21 +553,72 @@ const Home = () => {
                         </Card>
                     </Col>
 
-                    <Col>
+                    <Col className="Col6">
                         <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+                            <Carousel indicators={false}>
+                                <Carousel.Item>
+                                    <img
+                                        className="d-block w-100"
+                                        src={img0GTR1}
+                                        alt="Third slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <img
+                                        className="d-block w-100"
+                                        src={img1GTR1}
+                                        alt="Third slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <img
+                                        className="d-block w-100"
+                                        src={img2GTR1}
+                                        alt="Third slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <img
+                                        className="d-block w-100"
+                                        src={img3GTR1}
+                                        alt="Third slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <img
+                                        className="d-block w-100"
+                                        src={img4GTR1}
+                                        alt="Third slide"
+                                    />
+                                </Carousel.Item>
+                                
+
+                            </Carousel>
                             <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
+                                <Card.Title className="titleCard">Nissan GT-R</Card.Title>
+                                <Card.Text className="textCard">
+                                    
+                                        <Row>
+                                            <Col>
+                                            <MdAttachMoney/>
+                                            <br/>
+                                                R$ 75 por dia
+                                            </Col>
+                                           
+                                            <Col>
+                                            <BsFillPeopleFill />
+                                            <br />
+                                            2 pessoas
+                                            </Col>
+                                            <Col>
+                                                <BsSpeedometer2 />
+                                                <br />
+                                                Milhas ilimitadas
+                                            </Col>
+                                        </Row>
+                                    
                                 </Card.Text>
                             </Card.Body>
-                            <ListGroup className="list-group-flush">
-                                <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                                <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                                <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-                            </ListGroup>
                             <Card.Body>
                                 <Button variant="primary">Reservar</Button>
                             </Card.Body>
