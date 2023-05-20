@@ -14,6 +14,10 @@
     transition: opacity 0.3s ease;
   }
   
+  .scroll-to-top:hover{
+    background-color: #EF8354;
+  }
+
   .scroll-to-top.show {
     opacity: 1;
   }

@@ -27,20 +27,20 @@ const NavigationBar = () => {
                 <FaBars className="toggle" />
                 </Navbar.Toggle>
                 <Navbar.Collapse className='desktopLink' >
-                    <Nav className="me-auto mx-auto">
-                        <Nav.Link href="#home" >
+                    <Nav className="me-auto mx-2">
+                        <Nav.Link className='mx-2' href="#home" >
                             Home
                         </Nav.Link>
-                        <Nav.Link href="#services" >
+                        <Nav.Link className='mx-2' href="#services" >
                             Sobre
                         </Nav.Link>
-                        <Nav.Link href="#about" >
+                        <Nav.Link className='mx-2' href="#about" >
                             Modelos
                         </Nav.Link>
-                        <Nav.Link href="#services" >
+                        <Nav.Link className='mx-2' href="#services" >
                             Depoimentos
                         </Nav.Link>
-                        <Nav.Link href="#contact" >
+                        <Nav.Link className='mx-2' href="#contact" >
                             Contato
                         </Nav.Link>
                     </Nav>
