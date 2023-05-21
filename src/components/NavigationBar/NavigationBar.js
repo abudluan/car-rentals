@@ -65,7 +65,7 @@ const NavigationBar = () => {
                             <Nav.Link href="#about" onClick={handleLinkClick}>
                                 Sobre
                             </Nav.Link>
-                            <Nav.Link href="#services" onClick={handleLinkClick}>
+                            <Nav.Link href="#Models" onClick={handleLinkClick}>
                                 Veículos
                             </Nav.Link>
                             <Nav.Link href="#contact" onClick={handleLinkClick}>

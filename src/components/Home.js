@@ -59,6 +59,12 @@ import img2GTR1 from './img/Home/card6/img2-gtr1.jpg';
 import img3GTR1 from './img/Home/card6/img3-gtr1.jpg';
 import img4GTR1 from './img/Home/card6/img4-gtr1.jpg';
 
+//Card7
+import img0MERC from './img/Home/card7/img0-merc1.avif';
+import img1MERC from './img/Home/card7/img1-merc1.avif';
+import img2MERC from './img/Home/card7/img2-merc1.avif';
+import img3MERC from './img/Home/card7/img3-merc1.avif';
+
 const Home = () => {
 
     const containerRef = useRef(null);
@@ -127,8 +133,8 @@ const Home = () => {
                 </Row>
             </Container>
 
-
-            <Container className="sec2">
+            <div className="sec2">
+            
                 <Row className="flex-nowrap overflow-auto pb-5"
                     ref={containerRef}
                     onMouseDown={handleMouseDown}
@@ -625,52 +631,76 @@ const Home = () => {
                         </Card>
                     </Col>
 
-                    <Col>
+                    <Col className="Col7">
                         <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+                            <Carousel indicators={false}>
+                                <Carousel.Item>
+                                    <img
+                                        className="d-block w-100"
+                                        src={img0MERC}
+                                        alt="Third slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <img
+                                        className="d-block w-100"
+                                        src={img1MERC}
+                                        alt="Third slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <img
+                                        className="d-block w-100"
+                                        src={img2MERC}
+                                        alt="Third slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <img
+                                        className="d-block w-100"
+                                        src={img3MERC}
+                                        alt="Third slide"
+                                    />
+                                </Carousel.Item>
+                                
+                            </Carousel>
                             <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
+                                <Card.Title className="titleCard">Mercedes-Benz Class A</Card.Title>
+                                <Card.Text className="textCard">
+                                    
+                                        <Row>
+                                            <Col>
+                                            <MdAttachMoney/>
+                                            <br/>
+                                                R$ 75 por dia
+                                            </Col>
+                                           
+                                            <Col>
+                                            <BsFillPeopleFill />
+                                            <br />
+                                            4 pessoas
+                                            </Col>
+                                            <Col>
+                                                <BsSpeedometer2 />
+                                                <br />
+                                                Milhas ilimitadas
+                                            </Col>
+                                        </Row>
+
                                 </Card.Text>
                             </Card.Body>
-                            <ListGroup className="list-group-flush">
-                                <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                                <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                                <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-                            </ListGroup>
                             <Card.Body>
                                 <Button variant="primary">Reservar</Button>
                             </Card.Body>
                         </Card>
                     </Col>
 
-                    <Col>
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                            </Card.Body>
-                            <ListGroup className="list-group-flush">
-                                <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                                <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                                <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-                            </ListGroup>
-                            <Card.Body>
-                                <Button variant="primary">Reservar</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
+                    
 
 
                 </Row>
-            </Container>
-
+           
+            </div>
         </section>
     );
 }

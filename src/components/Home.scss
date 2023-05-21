@@ -113,7 +113,14 @@
         text-align: center;
         overflow-x: auto;
         padding-bottom: 2em;
+        padding-top: 4em;
         margin-bottom: 2em;
+        background-image: url(./img/Home/sec2-bg.png);
+        background-position: center;
+
+        .row{
+            margin: 0;
+        }
 
         Button{
             background-color: #2d3142;
@@ -127,7 +134,10 @@
 
         .titleCard{
             font-weight: bold;
+            border-bottom: #2d3142 2px solid;
         }
+
+
 
         
         
@@ -136,16 +146,17 @@
     ::-webkit-scrollbar {
         width: 0.5em;
         border-radius: 5px;
+       
     }
 
     ::-webkit-scrollbar-thumb {
         background-color: #e2652f;
         border-radius: 5px;
-        
     }
 
     ::-webkit-scrollbar-track {
         background-color: #4e5575;
         border-radius: 5px;
+        margin: 0 0.5em 0 0.5em;
     }
 }
