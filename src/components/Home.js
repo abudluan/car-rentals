@@ -213,7 +213,7 @@ const Home = () => {
                                 <Card.Title className="titleCard">BMW X1</Card.Title>
                                 <Card.Text className="textCard">
                                     
-                                        <Row>
+                                        <Row className="container">
                                             <Col>
                                             <MdAttachMoney/>
                                             <br/>
@@ -304,7 +304,7 @@ const Home = () => {
                                 <Card.Title className="titleCard">BMW X4</Card.Title>
                                 <Card.Text className="textCard">
                                     
-                                        <Row>
+                                        <Row className="container">
                                             <Col>
                                             <MdAttachMoney/>
                                             <br/>
@@ -330,7 +330,6 @@ const Home = () => {
                             </Card.Body>
                         </Card>
                     </Col>
-
 
                     <Col className="Col3">
                         <Card style={{ width: '18rem' }}>
@@ -376,7 +375,7 @@ const Home = () => {
                                 <Card.Title className="titleCard">Audi RS 6	Avant</Card.Title>
                                 <Card.Text className="textCard">
                                     
-                                        <Row>
+                                        <Row className="container">
                                             <Col>
                                             <MdAttachMoney/>
                                             <br/>
@@ -461,7 +460,7 @@ const Home = () => {
                                 <Card.Title className="titleCard">Audi Q8</Card.Title>
                                 <Card.Text className="textCard">
                                     
-                                        <Row>
+                                        <Row className="container">
                                             <Col>
                                             <MdAttachMoney/>
                                             <br/>
@@ -532,7 +531,7 @@ const Home = () => {
                                 <Card.Title className="titleCard">BMW Série 1</Card.Title>
                                 <Card.Text className="textCard">
                                     
-                                        <Row>
+                                        <Row className="container">
                                             <Col>
                                             <MdAttachMoney/>
                                             <br/>
@@ -604,7 +603,7 @@ const Home = () => {
                                 <Card.Title className="titleCard">Nissan GT-R</Card.Title>
                                 <Card.Text className="textCard">
                                     
-                                        <Row>
+                                        <Row className="container">
                                             <Col>
                                             <MdAttachMoney/>
                                             <br/>
@@ -668,7 +667,7 @@ const Home = () => {
                                 <Card.Title className="titleCard">Mercedes-Benz Class A</Card.Title>
                                 <Card.Text className="textCard">
                                     
-                                        <Row>
+                                        <Row className="container">
                                             <Col>
                                             <MdAttachMoney/>
                                             <br/>
