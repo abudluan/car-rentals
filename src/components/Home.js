@@ -3,7 +3,7 @@ import './Home.scss';
 import { Container, Row, Col, Button, Card, ListGroup, Carousel } from "react-bootstrap";
 import { HiArrowCircleRight, HiCheckCircle } from "react-icons/hi";
 import { BsFillPeopleFill, BsSpeedometer2 } from 'react-icons/bs';
-import {MdAttachMoney} from 'react-icons/md';
+import { MdAttachMoney } from 'react-icons/md';
 
 import CarSec1 from './img/Home/car-sec1.png';
 
@@ -134,7 +134,7 @@ const Home = () => {
             </Container>
 
             <div className="sec2">
-            
+
                 <Row className="flex-nowrap overflow-auto pb-5"
                     ref={containerRef}
                     onMouseDown={handleMouseDown}
@@ -212,26 +212,26 @@ const Home = () => {
                             <Card.Body>
                                 <Card.Title className="titleCard">BMW X1</Card.Title>
                                 <Card.Text className="textCard">
-                                    
-                                        <Row className="container">
-                                            <Col>
-                                            <MdAttachMoney/>
-                                            <br/>
-                                                R$ 85 por dia
-                                            </Col>
-                                           
-                                            <Col>
+
+                                    <Row className="container">
+                                        <Col>
+                                            <MdAttachMoney />
+                                            <br />
+                                            R$ 85 por dia
+                                        </Col>
+
+                                        <Col>
                                             <BsFillPeopleFill />
                                             <br />
                                             5 pessoas
-                                            </Col>
-                                            <Col>
-                                                <BsSpeedometer2 />
-                                                <br />
-                                                Milhas ilimitadas
-                                            </Col>
-                                        </Row>
-                                    
+                                        </Col>
+                                        <Col>
+                                            <BsSpeedometer2 />
+                                            <br />
+                                            Milhas ilimitadas
+                                        </Col>
+                                    </Row>
+
                                 </Card.Text>
                             </Card.Body>
                             <Card.Body>
@@ -239,7 +239,7 @@ const Home = () => {
                             </Card.Body>
                         </Card>
                     </Col>
-                        
+
                     <Col className="Col2">
                         <Card style={{ width: '18rem' }}>
                             <Carousel indicators={false}>
@@ -303,26 +303,26 @@ const Home = () => {
                             <Card.Body>
                                 <Card.Title className="titleCard">BMW X4</Card.Title>
                                 <Card.Text className="textCard">
-                                    
-                                        <Row className="container">
-                                            <Col>
-                                            <MdAttachMoney/>
-                                            <br/>
-                                                R$ 65 por dia
-                                            </Col>
-                                           
-                                            <Col>
+
+                                    <Row className="container">
+                                        <Col>
+                                            <MdAttachMoney />
+                                            <br />
+                                            R$ 65 por dia
+                                        </Col>
+
+                                        <Col>
                                             <BsFillPeopleFill />
                                             <br />
                                             5 pessoas
-                                            </Col>
-                                            <Col>
-                                                <BsSpeedometer2 />
-                                                <br />
-                                                Milhas ilimitadas
-                                            </Col>
-                                        </Row>
-                                    
+                                        </Col>
+                                        <Col>
+                                            <BsSpeedometer2 />
+                                            <br />
+                                            Milhas ilimitadas
+                                        </Col>
+                                    </Row>
+
                                 </Card.Text>
                             </Card.Body>
                             <Card.Body>
@@ -374,26 +374,26 @@ const Home = () => {
                             <Card.Body>
                                 <Card.Title className="titleCard">Audi RS 6	Avant</Card.Title>
                                 <Card.Text className="textCard">
-                                    
-                                        <Row className="container">
-                                            <Col>
-                                            <MdAttachMoney/>
-                                            <br/>
-                                                R$ 65 por dia
-                                            </Col>
-                                           
-                                            <Col>
+
+                                    <Row className="container">
+                                        <Col>
+                                            <MdAttachMoney />
+                                            <br />
+                                            R$ 65 por dia
+                                        </Col>
+
+                                        <Col>
                                             <BsFillPeopleFill />
                                             <br />
                                             5 pessoas
-                                            </Col>
-                                            <Col>
-                                                <BsSpeedometer2 />
-                                                <br />
-                                                Milhas ilimitadas
-                                            </Col>
-                                        </Row>
-                                    
+                                        </Col>
+                                        <Col>
+                                            <BsSpeedometer2 />
+                                            <br />
+                                            Milhas ilimitadas
+                                        </Col>
+                                    </Row>
+
                                 </Card.Text>
                             </Card.Body>
                             <Card.Body>
@@ -459,26 +459,26 @@ const Home = () => {
                             <Card.Body>
                                 <Card.Title className="titleCard">Audi Q8</Card.Title>
                                 <Card.Text className="textCard">
-                                    
-                                        <Row className="container">
-                                            <Col>
-                                            <MdAttachMoney/>
-                                            <br/>
-                                                R$ 55 por dia
-                                            </Col>
-                                           
-                                            <Col>
+
+                                    <Row className="container">
+                                        <Col>
+                                            <MdAttachMoney />
+                                            <br />
+                                            R$ 55 por dia
+                                        </Col>
+
+                                        <Col>
                                             <BsFillPeopleFill />
                                             <br />
                                             5 pessoas
-                                            </Col>
-                                            <Col>
-                                                <BsSpeedometer2 />
-                                                <br />
-                                                Milhas ilimitadas
-                                            </Col>
-                                        </Row>
-                                    
+                                        </Col>
+                                        <Col>
+                                            <BsSpeedometer2 />
+                                            <br />
+                                            Milhas ilimitadas
+                                        </Col>
+                                    </Row>
+
                                 </Card.Text>
                             </Card.Body>
                             <Card.Body>
@@ -530,26 +530,26 @@ const Home = () => {
                             <Card.Body>
                                 <Card.Title className="titleCard">BMW Série 1</Card.Title>
                                 <Card.Text className="textCard">
-                                    
-                                        <Row className="container">
-                                            <Col>
-                                            <MdAttachMoney/>
-                                            <br/>
-                                                R$ 55 por dia
-                                            </Col>
-                                           
-                                            <Col>
+
+                                    <Row className="container">
+                                        <Col>
+                                            <MdAttachMoney />
+                                            <br />
+                                            R$ 55 por dia
+                                        </Col>
+
+                                        <Col>
                                             <BsFillPeopleFill />
                                             <br />
                                             4 pessoas
-                                            </Col>
-                                            <Col>
-                                                <BsSpeedometer2 />
-                                                <br />
-                                                Milhas ilimitadas
-                                            </Col>
-                                        </Row>
-                                    
+                                        </Col>
+                                        <Col>
+                                            <BsSpeedometer2 />
+                                            <br />
+                                            Milhas ilimitadas
+                                        </Col>
+                                    </Row>
+
                                 </Card.Text>
                             </Card.Body>
                             <Card.Body>
@@ -596,32 +596,32 @@ const Home = () => {
                                         alt="Third slide"
                                     />
                                 </Carousel.Item>
-                                
+
 
                             </Carousel>
                             <Card.Body>
                                 <Card.Title className="titleCard">Nissan GT-R</Card.Title>
                                 <Card.Text className="textCard">
-                                    
-                                        <Row className="container">
-                                            <Col>
-                                            <MdAttachMoney/>
-                                            <br/>
-                                                R$ 75 por dia
-                                            </Col>
-                                           
-                                            <Col>
+
+                                    <Row className="container">
+                                        <Col>
+                                            <MdAttachMoney />
+                                            <br />
+                                            R$ 75 por dia
+                                        </Col>
+
+                                        <Col>
                                             <BsFillPeopleFill />
                                             <br />
                                             2 pessoas
-                                            </Col>
-                                            <Col>
-                                                <BsSpeedometer2 />
-                                                <br />
-                                                Milhas ilimitadas
-                                            </Col>
-                                        </Row>
-                                    
+                                        </Col>
+                                        <Col>
+                                            <BsSpeedometer2 />
+                                            <br />
+                                            Milhas ilimitadas
+                                        </Col>
+                                    </Row>
+
                                 </Card.Text>
                             </Card.Body>
                             <Card.Body>
@@ -661,30 +661,30 @@ const Home = () => {
                                         alt="Third slide"
                                     />
                                 </Carousel.Item>
-                                
+
                             </Carousel>
                             <Card.Body>
                                 <Card.Title className="titleCard">Mercedes-Benz Class A</Card.Title>
                                 <Card.Text className="textCard">
-                                    
-                                        <Row className="container">
-                                            <Col>
-                                            <MdAttachMoney/>
-                                            <br/>
-                                                R$ 75 por dia
-                                            </Col>
-                                           
-                                            <Col>
+
+                                    <Row className="container">
+                                        <Col>
+                                            <MdAttachMoney />
+                                            <br />
+                                            R$ 75 por dia
+                                        </Col>
+
+                                        <Col>
                                             <BsFillPeopleFill />
                                             <br />
                                             4 pessoas
-                                            </Col>
-                                            <Col>
-                                                <BsSpeedometer2 />
-                                                <br />
-                                                Milhas ilimitadas
-                                            </Col>
-                                        </Row>
+                                        </Col>
+                                        <Col>
+                                            <BsSpeedometer2 />
+                                            <br />
+                                            Milhas ilimitadas
+                                        </Col>
+                                    </Row>
 
                                 </Card.Text>
                             </Card.Body>
@@ -694,12 +694,31 @@ const Home = () => {
                         </Card>
                     </Col>
 
-                    
-
-
                 </Row>
-           
+
             </div>
+
+            <Container className="sec3">
+
+                <h1>Facilidade e Simplicidade</h1>
+                <h3 className="text-center">Planje sua viagem sem burocracia e com agilidade</h3>
+
+                <Row>
+                    <Col>
+                    
+                    </Col>
+
+                    <Col>
+
+                    </Col>
+
+                    <Col>
+                    
+                    </Col>
+                </Row>
+
+            </Container>
+
         </section>
     );
 }
