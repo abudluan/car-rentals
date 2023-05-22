@@ -21,7 +21,7 @@
                     margin-top: -8em;
                 }
             }
-            
+
 
             @media (max-width:1919px) {
 
@@ -92,15 +92,43 @@
                 border-color: #EF8354;
             }
 
+
+
             .btnLearnMore {
-                background-color: transparent;
+                position: relative;
+                background-color: white;
                 border-color: #2D3142;
                 color: black;
+                z-index: 1;
             }
 
             .btnLearnMore:hover {
-                background-color: #2D3142;
                 color: white;
+            }
+
+            .btnLearnMore::after {
+                content: '';
+                border-radius: 3px;
+                position: absolute;
+                left: 0;
+                bottom: 0%;
+                height: 100%;
+                width: 0;
+                background-color: #2D3142;
+                transition: 0.3s ease 0s, left 0.3s ease 0s;
+
+
+            }
+
+            .btnLearnMore:hover::after {
+                content: '';
+                border-radius: 3px;
+                position: absolute;
+                left: 0;
+                bottom: 0%;
+                height: 100%;
+                width: 100%;
+                z-index: -1
             }
 
 
