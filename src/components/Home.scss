@@ -191,10 +191,28 @@
 
     .sec3 {
 
+        text-align: center;
+        color: #2d3142;
+        padding-bottom: 120em;
 
         h1 {
             text-align: center;
             font-weight: bold;
         }
+
+        .iconsSec3{
+            margin-top: 5em;
+
+            
+            h3{
+                color: #EF8354;
+            }
+            .icon{
+                color: #EF8354;
+                font-size: 8em;
+            }
+        }
+
+        
     }
 }

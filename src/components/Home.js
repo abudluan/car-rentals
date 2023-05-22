@@ -5,6 +5,9 @@ import { HiArrowCircleRight, HiCheckCircle } from "react-icons/hi";
 import { BsFillPeopleFill, BsSpeedometer2 } from 'react-icons/bs';
 import { MdAttachMoney, MdCarRental } from 'react-icons/md';
 import { RiCustomerService2Fill } from 'react-icons/ri';
+import { GiGearHammer } from 'react-icons/gi';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import CarSec1 from './img/Home/car-sec1.png';
 import imgFundo from './img/Home/sec1-bg.png';
@@ -105,6 +108,8 @@ const Home = () => {
         });
     };
 
+    AOS.init();
+
     return (
         <section id='home'>
 
@@ -131,10 +136,10 @@ const Home = () => {
 
                     <Col className="img-Carro">
                         <img src={CarSec1} className="img-fluid" alt="" />
-                        <img src={imgFundo} className="img-fluid imgFundo" alt=""/>
-                    
+                        <img src={imgFundo} className="img-fluid imgFundo" alt="" />
+
                     </Col>
-                    
+
 
                 </Row>
             </Container>
@@ -709,17 +714,27 @@ const Home = () => {
                 <h1>Facilidade e Simplicidade</h1>
                 <h3 className="text-center">Planje sua viagem sem burocracia e com agilidade</h3>
 
-                <Row>
-                    <Col>
-                        <MdCarRental />
+                <Row className="container iconsSec3">
+
+                    <Col className="mt-5" data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom" data-aos-duration="500">
+                        <MdCarRental className="icon" />
+                        <h3>Escolha o carro</h3>
+                        <p>Oferecemos uma grande variedade de veículos para todas as suas necessidades de direção. Temos o carro perfeito para atender às suas necessidades.</p>
                     </Col>
 
-                    <Col>
-                        <RiCustomerService2Fill />
+                    <Col className="mt-5" data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom" data-aos-duration="700">
+                        <RiCustomerService2Fill className="icon" />
+                        <h3>Suporte</h3>
+                        <p>Nossos operadores experientes e amigáveis estão sempre prontos para ajudar com qualquer dúvida ou preocupação.</p>
                     </Col>
 
-                    <Col>
-
+                    <Col className="mt-5" data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom" data-aos-duration="900">
+                        <GiGearHammer className="icon" />
+                        <h3>Assisência 24/7</h3>
+                        <p>Viage despreocupado, nossos mecânicos e assistentes estarão sempre aposotos em caso de imprevistos com seu carro, não importa a hora e local.</p>
                     </Col>
                 </Row>
 
