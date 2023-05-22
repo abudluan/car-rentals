@@ -117,7 +117,8 @@
         margin-bottom: 2em;
         background-image: url(./img/Home/sec2-bg.png);
         background-position: center;
-
+        user-select: none;
+        
         .row{
             margin: 0;
         }
