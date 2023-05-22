@@ -4,8 +4,8 @@ import { Container, Row, Col, Button, Card, ListGroup, Carousel } from "react-bo
 import { HiArrowCircleRight, HiCheckCircle } from "react-icons/hi";
 import { BsFillPeopleFill, BsSpeedometer2 } from 'react-icons/bs';
 import { MdAttachMoney, MdCarRental } from 'react-icons/md';
-import { RiCustomerService2Fill } from 'react-icons/ri';
-import { GiGearHammer } from 'react-icons/gi';
+import { BiSupport } from 'react-icons/bi';
+import { RiToolsFill } from 'react-icons/ri';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -725,14 +725,14 @@ const Home = () => {
                     </Col>
 
                     <Col className="mt-5" data-aos="fade-up" data-aos-duration="700">
-                        <RiCustomerService2Fill className="icon" />
+                        <BiSupport className="icon" />
                         <h3>Suporte</h3>
                         <br />
                         <p>Nossos operadores experientes e amigáveis estão sempre prontos para ajudar com qualquer dúvida ou preocupação.</p>
                     </Col>
 
                     <Col className="mt-5" data-aos="fade-up" data-aos-duration="900">
-                        <GiGearHammer className="icon" />
+                        <RiToolsFill className="icon" />
                         <h3>Assisência 24/7</h3>
                         <br />
                         <p>Viage despreocupado, nossos mecânicos e assistentes estarão sempre aposotos em caso de imprevistos com seu carro, não importa a hora e local.</p>
