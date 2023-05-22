@@ -712,31 +712,33 @@ const Home = () => {
             <Container className="sec3">
 
                 <h1>Facilidade e Simplicidade</h1>
-                <h3 className="text-center">Planje sua viagem sem burocracia e com agilidade</h3>
+                <h3 className="text-center mb-5">Planje sua viagem sem burocracia e com agilidade</h3>
 
-                <Row className="container iconsSec3">
+                <Container>
+                <Row className="iconsSec3">
 
-                    <Col className="mt-5" data-aos="fade-up"
-                        data-aos-anchor-placement="center-bottom" data-aos-duration="500">
+                    <Col className="mt-5" data-aos="fade-up" data-aos-duration="500">
                         <MdCarRental className="icon" />
                         <h3>Escolha o carro</h3>
+                        <br />
                         <p>Oferecemos uma grande variedade de veículos para todas as suas necessidades de direção. Temos o carro perfeito para atender às suas necessidades.</p>
                     </Col>
 
-                    <Col className="mt-5" data-aos="fade-up"
-                        data-aos-anchor-placement="center-bottom" data-aos-duration="700">
+                    <Col className="mt-5" data-aos="fade-up" data-aos-duration="700">
                         <RiCustomerService2Fill className="icon" />
                         <h3>Suporte</h3>
+                        <br />
                         <p>Nossos operadores experientes e amigáveis estão sempre prontos para ajudar com qualquer dúvida ou preocupação.</p>
                     </Col>
 
-                    <Col className="mt-5" data-aos="fade-up"
-                        data-aos-anchor-placement="center-bottom" data-aos-duration="900">
+                    <Col className="mt-5" data-aos="fade-up" data-aos-duration="900">
                         <GiGearHammer className="icon" />
                         <h3>Assisência 24/7</h3>
+                        <br />
                         <p>Viage despreocupado, nossos mecânicos e assistentes estarão sempre aposotos em caso de imprevistos com seu carro, não importa a hora e local.</p>
                     </Col>
                 </Row>
+                </Container>
 
             </Container>
 
