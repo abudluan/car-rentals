@@ -90,10 +90,10 @@
 
             img {
                 max-height: 25em;
-                margin-top: 9em;
+                margin-top: 7em;
 
-                @media (max-width:1919px){
-                    margin-top: 6em;
+                @media (max-width:1360px){
+                    margin-top: 9em;
                     
                 }
             }
@@ -118,7 +118,7 @@
         background-image: url(./img/Home/sec2-bg.png);
         background-position: center;
         user-select: none;
-        
+
         .row{
             margin: 0;
         }
