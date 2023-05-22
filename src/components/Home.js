@@ -3,10 +3,11 @@ import './Home.scss';
 import { Container, Row, Col, Button, Card, ListGroup, Carousel } from "react-bootstrap";
 import { HiArrowCircleRight, HiCheckCircle } from "react-icons/hi";
 import { BsFillPeopleFill, BsSpeedometer2 } from 'react-icons/bs';
-import { MdAttachMoney } from 'react-icons/md';
+import { MdAttachMoney, MdCarRental } from 'react-icons/md';
+import { RiCustomerService2Fill } from 'react-icons/ri';
 
 import CarSec1 from './img/Home/car-sec1.png';
-
+import imgFundo from './img/Home/sec1-bg.png';
 //Card 1
 import img0BMW1 from './img/Home/card1/img0-bmw1.jpg';
 import img1BMW1 from './img/Home/card1/img1-bmw1.jpg';
@@ -128,7 +129,12 @@ const Home = () => {
                         </Container>
                     </Col>
 
-                    <Col className="img-Carro"><img src={CarSec1} className="img-fluid" alt="" /></Col>
+                    <Col className="img-Carro">
+                        <img src={CarSec1} className="img-fluid" alt="" />
+                        <img src={imgFundo} className="img-fluid imgFundo" alt=""/>
+                    
+                    </Col>
+                    
 
                 </Row>
             </Container>
@@ -705,15 +711,15 @@ const Home = () => {
 
                 <Row>
                     <Col>
-                        
+                        <MdCarRental />
+                    </Col>
+
+                    <Col>
+                        <RiCustomerService2Fill />
                     </Col>
 
                     <Col>
 
-                    </Col>
-
-                    <Col>
-                    
                     </Col>
                 </Row>
 
