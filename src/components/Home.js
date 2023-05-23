@@ -1,11 +1,13 @@
 import React, { useRef, useState } from "react";
 import './Home.scss';
-import { Container, Row, Col, Button, Card, Carousel } from "react-bootstrap";
+import { Container, Row, Col, Button, Card, Carousel, CardGroup, Image } from "react-bootstrap";
 import { HiArrowCircleRight, HiCheckCircle } from "react-icons/hi";
 import { BsFillPeopleFill, BsSpeedometer2 } from 'react-icons/bs';
 import { MdAttachMoney, MdCarRental } from 'react-icons/md';
 import { BiSupport } from 'react-icons/bi';
 import { RiToolsFill } from 'react-icons/ri';
+import { FiChevronsDown } from 'react-icons/fi';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -69,6 +71,11 @@ import img1MERC from './img/Home/card7/img1-merc1.avif';
 import img2MERC from './img/Home/card7/img2-merc1.avif';
 import img3MERC from './img/Home/card7/img3-merc1.avif';
 
+import Pic1 from './img/Home/profilePics/pic1.png';
+import Pic2 from './img/Home/profilePics/pic2.png';
+import Pic3 from './img/Home/profilePics/pic3.png';
+
+
 const Home = () => {
 
     const containerRef = useRef(null);
@@ -92,7 +99,7 @@ const Home = () => {
         setIsMouseDown(false);
     };
 
-    
+
 
     AOS.init();
 
@@ -701,32 +708,82 @@ const Home = () => {
                 <h3 className="text-center mb-5">Planje sua viagem sem burocracia e com agilidade</h3>
 
                 <Container>
-                <Row className="iconsSec3">
+                    <Row className="iconsSec3">
 
-                    <Col sm={4} className="mt-5" data-aos="fade-up" data-aos-duration="600">
-                        <MdCarRental className="icon" />
-                        <h3>Escolha o carro</h3>
-                        <br />
-                        <p>Oferecemos uma grande variedade de veículos para todas as suas necessidades de direção. Temos o carro perfeito para atender às suas necessidades.</p>
-                    </Col>
+                        <Col sm={4} className="mt-5" data-aos="fade-up" data-aos-duration="700">
+                            <MdCarRental className="icon" />
+                            <h3>Escolha o carro</h3>
+                            <br />
+                            <p>Oferecemos uma grande variedade de veículos para todas as suas necessidades de direção. Temos o carro perfeito para atender às suas necessidades.</p>
+                        </Col>
 
-                    <Col sm={4} className="mt-5" data-aos="fade-up" data-aos-duration="900">
-                        <BiSupport className="icon" />
-                        <h3>Suporte</h3>
-                        <br />
-                        <p>Nossos operadores experientes e amigáveis estão sempre prontos para ajudar com qualquer dúvida ou preocupação.</p>
-                    </Col>
+                        <Col sm={4} className="mt-5" data-aos="fade-up" data-aos-duration="1000">
+                            <BiSupport className="icon" />
+                            <h3>Suporte</h3>
+                            <br />
+                            <p>Nossos operadores experientes e amigáveis estão sempre prontos para ajudar com qualquer dúvida ou preocupação.</p>
+                        </Col>
 
-                    <Col sm={4} className="mt-5" data-aos="fade-up" data-aos-duration="1100">
-                        <RiToolsFill className="icon" />
-                        <h3>Assisência 24/7</h3>
-                        <br />
-                        <p>Viage despreocupado, nossos mecânicos e assistentes estarão sempre aposotos em caso de imprevistos com seu carro, não importa a hora e local.</p>
-                    </Col>
-                </Row>
+                        <Col sm={4} className="mt-5" data-aos="fade-up" data-aos-duration="1200">
+                            <RiToolsFill className="icon" />
+                            <h3>Assisência 24/7</h3>
+                            <br />
+                            <p>Viage despreocupado, nossos mecânicos e assistentes estarão sempre aposotos em caso de imprevistos com seu carro, não importa a hora e local.</p>
+                        </Col>
+                    </Row>
                 </Container>
 
             </Container>
+
+
+            <div className="sec4">
+
+                <div>
+                    <h1>
+                        Porque nos escolher?
+                    </h1>
+                    <h4>Veja o depoimento de quem escolheu e ficou satisfeito com nossos serviços</h4>
+                    <div className="icon">
+                        <FiChevronsDown />
+                    </div>
+                </div>
+
+                <Container className="avaliation">
+                    <Row>
+                        <CardGroup>
+                            <Card className="mx-2 cardBody" data-aos="fade-down" data-aos-duration="700">
+                                <Card.Body>
+                                    <Card.Text className="text-av">
+                                        Quero expressar minha satisfação com os serviços da Car Rentals. Foi a primeira vez que aluguei um carro e fiquei impressionada com a experiência. O processo de reserva foi fácil e rápido, e o atendimento da equipe da Car Rentals foi excepcional. O veículo que aluguei estava em ótimo estado e proporcionou uma viagem confortável e segura. Recomendo a Car Rentals a todos que procuram um serviço confiável e de qualidade. Com certeza, voltarei a alugar com vocês no futuro. Muito obrigada!
+                                    </Card.Text>
+
+                                    <h5><img src={Pic1} />Sofia Santos</h5>
+
+                                </Card.Body>
+                            </Card>
+                            <Card className="mx-2 cardBody" data-aos="fade-down" data-aos-duration="1000">
+                                <Card.Body>
+                                    <Card.Text className="text-av">
+                                        Minha experiência com a Car Rentals foi incrível! O processo de aluguel do carro foi muito prático e eficiente. O veículo estava em perfeitas condições e me proporcionou uma viagem tranquila e confortável. Além disso, o atendimento da equipe foi excepcional, sempre prestativos e amigáveis. Recomendo a Car Rentals a todos que buscam um serviço de aluguel de carros de qualidade. Parabéns pelo excelente trabalho!
+                                    </Card.Text>
+
+                                    <h5><img src={Pic2} />Ethan Silva</h5>
+                                </Card.Body>
+                            </Card>
+                            <Card className="mx-2 cardBody" data-aos="fade-down" data-aos-duration="1200">
+                                <Card.Body>
+                                    <Card.Text className="text-av">
+                                        Gostei muito dos serviços da Car Rentals. O atendimento foi excelente e o processo de aluguel do carro foi rápido e simples. O veículo estava em ótimas condições e pude desfrutar de uma viagem confortável e segura. Recomendo a Car Rentals a todos que precisam de um serviço confiável de aluguel de carros. Obrigada pela experiência!.
+                                    </Card.Text>
+                                    <h5><img src={Pic3} />Meera Santos</h5>
+                                </Card.Body>
+                            </Card>
+                        </CardGroup>
+                    </Row>
+                </Container>
+
+
+            </div>
 
         </section>
     );
