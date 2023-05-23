@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import './Home.scss';
-import { Container, Row, Col, Button, Card, ListGroup, Carousel } from "react-bootstrap";
+import { Container, Row, Col, Button, Card, Carousel } from "react-bootstrap";
 import { HiArrowCircleRight, HiCheckCircle } from "react-icons/hi";
 import { BsFillPeopleFill, BsSpeedometer2 } from 'react-icons/bs';
 import { MdAttachMoney, MdCarRental } from 'react-icons/md';
@@ -92,21 +92,7 @@ const Home = () => {
         setIsMouseDown(false);
     };
 
-    const scrollRight = () => {
-        const container = containerRef.current;
-        container.scrollTo({
-            left: container.scrollLeft + container.offsetWidth,
-            behavior: 'smooth',
-        });
-    };
-
-    const ScrollLeft = () => {
-        const container = containerRef.current;
-        container.scrollTo({
-            left: container.scrollLeft - container.offsetWidth,
-            behavior: 'smooth',
-        });
-    };
+    
 
     AOS.init();
 
@@ -717,21 +703,21 @@ const Home = () => {
                 <Container>
                 <Row className="iconsSec3">
 
-                    <Col className="mt-5" data-aos="fade-up" data-aos-duration="600">
+                    <Col sm={4} className="mt-5" data-aos="fade-up" data-aos-duration="600">
                         <MdCarRental className="icon" />
                         <h3>Escolha o carro</h3>
                         <br />
                         <p>Oferecemos uma grande variedade de veículos para todas as suas necessidades de direção. Temos o carro perfeito para atender às suas necessidades.</p>
                     </Col>
 
-                    <Col className="mt-5" data-aos="fade-up" data-aos-duration="800">
+                    <Col sm={4} className="mt-5" data-aos="fade-up" data-aos-duration="900">
                         <BiSupport className="icon" />
                         <h3>Suporte</h3>
                         <br />
                         <p>Nossos operadores experientes e amigáveis estão sempre prontos para ajudar com qualquer dúvida ou preocupação.</p>
                     </Col>
 
-                    <Col className="mt-5" data-aos="fade-up" data-aos-duration="1000">
+                    <Col sm={4} className="mt-5" data-aos="fade-up" data-aos-duration="1100">
                         <RiToolsFill className="icon" />
                         <h3>Assisência 24/7</h3>
                         <br />
