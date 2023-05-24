@@ -756,10 +756,17 @@ const Home = () => {
                                     <Card.Text className="text-av">
                                         Quero expressar minha satisfação com os serviços da Car Rentals. Foi a primeira vez que aluguei um carro e fiquei impressionada com a experiência. O processo de reserva foi fácil e rápido, e o atendimento da equipe da Car Rentals foi excepcional. O veículo que aluguei estava em ótimo estado e proporcionou uma viagem confortável e segura. Recomendo a Car Rentals a todos que procuram um serviço confiável e de qualidade. Com certeza, voltarei a alugar com vocês no futuro. Muito obrigada!
                                     </Card.Text>
-
-                                    <h5><img src={Pic1} />Sofia Santos</h5>
-
                                 </Card.Body>
+
+                                <Card.Footer className="footerCard">
+                                    <img src={Pic1} />
+
+                                    <div className="mt-1">
+                                        <h5>Sofia Santos</h5>
+                                        <p>São Paulo, Brasil</p>
+                                    </div>
+
+                                </Card.Footer>
                             </Card>
                             <Card className="mx-2 cardBody" data-aos="fade-down" data-aos-duration="1000">
                                 <Card.Body>
@@ -767,16 +774,40 @@ const Home = () => {
                                         Minha experiência com a Car Rentals foi incrível! O processo de aluguel do carro foi muito prático e eficiente. O veículo estava em perfeitas condições e me proporcionou uma viagem tranquila e confortável. Além disso, o atendimento da equipe foi excepcional, sempre prestativos e amigáveis. Recomendo a Car Rentals a todos que buscam um serviço de aluguel de carros de qualidade. Parabéns pelo excelente trabalho!
                                     </Card.Text>
 
-                                    <h5><img src={Pic2} />Ethan Silva</h5>
+
                                 </Card.Body>
+
+                                <Card.Footer className="footerCard">
+                                    <img src={Pic2} />
+
+                                    <div className="mt-1">
+                                        <h5>Ethan Silva</h5>
+                                        <p>São Paulo, Brasil</p>
+                                    </div>
+
+                                </Card.Footer>
+
                             </Card>
+
+
                             <Card className="mx-2 cardBody" data-aos="fade-down" data-aos-duration="1200">
                                 <Card.Body>
                                     <Card.Text className="text-av">
                                         Gostei muito dos serviços da Car Rentals. O atendimento foi excelente e o processo de aluguel do carro foi rápido e simples. O veículo estava em ótimas condições e pude desfrutar de uma viagem confortável e segura. Recomendo a Car Rentals a todos que precisam de um serviço confiável de aluguel de carros. Obrigada pela experiência!.
                                     </Card.Text>
-                                    <h5><img src={Pic3} />Meera Santos</h5>
+
                                 </Card.Body>
+
+                                <Card.Footer className="footerCard">
+                                <img src={Pic3} />
+
+                                    <div className="mt-1">
+                                    <h5>Meera Santos</h5>
+                                        <p>Belém, Brasil</p>
+                                    </div>
+
+                                </Card.Footer>
+
                             </Card>
                         </CardGroup>
                     </Row>

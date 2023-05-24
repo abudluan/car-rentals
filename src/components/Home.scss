@@ -277,14 +277,19 @@
             }
 
             .text-av{
-                height: 18em;
+                
                 text-align: justify;
             }
 
             img{
-                margin-right: 1em;
+                margin-right: 0.5em;
                 max-height: 4em;
             }
+
+            .footerCard{
+                display: flex;
+            }
+
         }
 
         
