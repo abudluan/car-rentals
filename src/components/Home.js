@@ -710,21 +710,21 @@ const Home = () => {
                 <Container>
                     <Row className="iconsSec3">
 
-                        <Col sm={4} className="mt-5" data-aos="fade-up" data-aos-duration="700">
+                        <Col sm={4} className="mt-5" data-aos="fade-down" data-aos-duration="700">
                             <MdCarRental className="icon" />
                             <h3>Escolha o carro</h3>
                             <br />
                             <p>Oferecemos uma grande variedade de veículos para todas as suas necessidades de direção. Temos o carro perfeito para atender às suas necessidades.</p>
                         </Col>
 
-                        <Col sm={4} className="mt-5" data-aos="fade-up" data-aos-duration="1000">
+                        <Col sm={4} className="mt-5" data-aos="fade-up" data-aos-duration="700">
                             <BiSupport className="icon" />
                             <h3>Suporte</h3>
                             <br />
                             <p>Nossos operadores experientes e amigáveis estão sempre prontos para ajudar com qualquer dúvida ou preocupação.</p>
                         </Col>
 
-                        <Col sm={4} className="mt-5" data-aos="fade-up" data-aos-duration="1200">
+                        <Col sm={4} className="mt-5" data-aos="fade-down" data-aos-duration="700">
                             <RiToolsFill className="icon" />
                             <h3>Assisência 24/7</h3>
                             <br />
