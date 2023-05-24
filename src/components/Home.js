@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import './Home.scss';
-import { Container, Row, Col, Button, Card, Carousel, CardGroup, Image } from "react-bootstrap";
+import { Container, Row, Col, Button, Card, Carousel, CardGroup, Accordion } from "react-bootstrap";
 import { HiArrowCircleRight, HiCheckCircle } from "react-icons/hi";
 import { BsFillPeopleFill, BsSpeedometer2 } from 'react-icons/bs';
 import { MdAttachMoney, MdCarRental } from 'react-icons/md';
@@ -781,9 +781,13 @@ const Home = () => {
                         </CardGroup>
                     </Row>
                 </Container>
-
-
             </div>
+
+            <Container className="sec5">
+                <h5>FAQ</h5>
+                <h1>Duvidas frequentes</h1>
+
+            </Container>
 
         </section>
     );
