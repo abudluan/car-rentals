@@ -101,6 +101,7 @@ const Home = () => {
 
 
 
+
     AOS.init();
 
     return (
@@ -779,7 +780,7 @@ const Home = () => {
 
                                     <div className="mt-1">
                                         <h5>Ethan Silva</h5>
-                                         <p className="text-muted">São Paulo, Brasil</p>
+                                        <p className="text-muted">São Paulo, Brasil</p>
                                     </div>
 
                                 </Card.Footer>
@@ -795,11 +796,11 @@ const Home = () => {
                                 </Card.Body>
 
                                 <Card.Footer className="footerCard">
-                                <img src={Pic3} />
+                                    <img src={Pic3} />
 
                                     <div className="mt-1">
-                                    <h5>Meera Santos</h5>
-                                         <p className="text-muted">Belém, Brasil</p>
+                                        <h5>Meera Santos</h5>
+                                        <p className="text-muted">Belém, Brasil</p>
                                     </div>
 
                                 </Card.Footer>
@@ -813,6 +814,11 @@ const Home = () => {
             <Container className="sec5">
                 <h5>FAQ</h5>
                 <h1>Duvidas frequentes</h1>
+
+                <div>
+                    <h4>1 - Pergunta</h4>
+                    <p>R - Resposta</p>
+                </div>
 
             </Container>
 
