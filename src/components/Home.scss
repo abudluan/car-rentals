@@ -273,7 +273,8 @@
             color: black;
 
             .cardBody{
-                border-radius: 5px;
+                border: none;
+                border-radius: 0;
             }
 
             .text-av{
@@ -287,6 +288,11 @@
             }
 
             .footerCard{
+                border-radius: 0;
+                border-top: #e2652f 2px solid;
+                padding-top: 1em;
+                background-color: #313959;
+                color: white;
                 display: flex;
             }
 

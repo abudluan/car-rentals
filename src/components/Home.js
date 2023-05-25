@@ -763,7 +763,7 @@ const Home = () => {
 
                                     <div className="mt-1">
                                         <h5>Sofia Santos</h5>
-                                        <p>São Paulo, Brasil</p>
+                                        <p className="text-muted">São Paulo, Brasil</p>
                                     </div>
 
                                 </Card.Footer>
@@ -782,11 +782,10 @@ const Home = () => {
 
                                     <div className="mt-1">
                                         <h5>Ethan Silva</h5>
-                                        <p>São Paulo, Brasil</p>
+                                         <p className="text-muted">São Paulo, Brasil</p>
                                     </div>
 
                                 </Card.Footer>
-
                             </Card>
 
 
@@ -803,7 +802,7 @@ const Home = () => {
 
                                     <div className="mt-1">
                                     <h5>Meera Santos</h5>
-                                        <p>Belém, Brasil</p>
+                                         <p className="text-muted">Belém, Brasil</p>
                                     </div>
 
                                 </Card.Footer>
