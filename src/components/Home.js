@@ -76,6 +76,9 @@ import Pic2 from './img/Home/profilePics/pic2.png';
 import Pic3 from './img/Home/profilePics/pic3.png';
 
 
+import BtnPlay from './img/Home/btn-playstore.svg';
+import BtnApple from './img/Home/btn-applestore.svg';
+
 const Home = () => {
 
     const containerRef = useRef(null);
@@ -740,7 +743,7 @@ const Home = () => {
                     <h1>
                         Porque nos escolher?
                     </h1>
-                    <h4>Veja o depoimento de quem escolheu e ficou satisfeito com nossos serviços</h4>
+                    <p className="container">Descubra o impacto positivo que causamos em nossos clientes lendo seus depoimentos. Nossos clientes experimentaram nossos serviços e resultados e estão ansiosos para compartilhar suas experiências positivas com você.</p>
                     <div className="icon">
                         <FiChevronsDown />
                     </div>
@@ -804,7 +807,6 @@ const Home = () => {
                                     </div>
 
                                 </Card.Footer>
-
                             </Card>
                         </CardGroup>
                     </Row>
@@ -812,15 +814,51 @@ const Home = () => {
             </div>
 
             <Container className="sec5">
+
+
                 <h5>FAQ</h5>
                 <h1>Duvidas frequentes</h1>
+                <p className="text-center mb-5">Perguntas frequentes sobre o processo de reserva de aluguel de carros em nosso site: respostas para dúvidas e dúvidas comuns.</p>
 
-                <div>
-                    <h4>1 - Pergunta</h4>
-                    <p>R - Resposta</p>
+
+                <div className="duvida mb-5">
+                    <h4>1. Quais são os documentos necessários para alugar um carro?</h4>
+                    <p>Para alugar um carro, geralmente é necessário apresentar uma carteira de motorista válida, emitida pelo país de origem. Além disso, pode ser solicitado um documento de identificação com foto e um cartão de crédito válido no nome do locatário.</p>
                 </div>
 
+                <div className="duvida mb-5">
+                    <h4>2. Qual é a idade mínima para alugar um carro?</h4>
+                    <p> A idade mínima para alugar um carro pode variar de acordo com a empresa de aluguel e o país em que você está. Geralmente, a idade mínima é de 21 anos, mas algumas empresas podem exigir que o locatário tenha pelo menos 25 anos. É importante verificar os requisitos específicos de idade com a empresa de aluguel antes de fazer a reserva.</p>
+                </div>
+
+                <div className="duvida">
+                    <h4>3. É possível adicionar um motorista adicional ao contrato de aluguel?</h4>
+                    <p>Sim, muitas empresas de aluguel de carros permitem adicionar um motorista adicional ao contrato, desde que atenda aos requisitos de idade e possua uma carteira de motorista válida. No entanto, pode haver uma taxa adicional para adicionar um motorista extra. É importante informar a empresa de aluguel sobre a intenção de adicionar um motorista adicional no momento da reserva ou no momento da retirada do veículo.</p>
+                </div>
             </Container>
+
+            <div className="sec6">
+
+                <Container>
+                    <div className="textApp">
+
+                        <h1>Transforme sua experiência de aluguel de carros!</h1>
+                        <h5>Baixe agora nosso app e tenha o controle nas suas mãos.</h5>
+
+                        <div className="BtnDownload">
+
+                            <a href="#"><img src={BtnPlay} className="mt-3" alt="" /></a>
+                            <a href="#"><img src={BtnApple} className="mt-3" alt="" /></a>
+
+                        </div>
+
+                    </div>
+
+
+
+                </Container>
+
+            </div>
 
         </section>
     );
