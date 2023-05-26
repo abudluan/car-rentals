@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Navbar, Nav, CloseButton, Button, Offcanvas } from 'react-bootstrap';
 import { FaBars } from 'react-icons/fa';
 import './NavigationBar.scss';
-
+import { Link } from 'react-router-dom';
 import NavLogo from '../img/Navbar/NavLogo.png';
 
 const NavigationBar = () => {
@@ -22,25 +22,30 @@ const NavigationBar = () => {
         <section id='NavigationBar'>
 
             <Navbar className='container' expand="lg">
-                <img className='img-fluid mx-2' src={NavLogo} alt=''/>
-                <Navbar.Toggle style={{color: '#9698a1'}}  className='mx-2' onClick={handleToggleOffcanvas} >
-                <FaBars className="toggle" />
+                <img className='img-fluid mx-2' src={NavLogo} alt='' />
+                <Navbar.Toggle style={{ color: '#9698a1' }} className='mx-2' onClick={handleToggleOffcanvas} >
+                    <FaBars className="toggle" />
                 </Navbar.Toggle>
                 <Navbar.Collapse className='desktopLink' >
                     <Nav className="me-auto mx-2">
-                        <Nav.Link className='mx-2' href="#home" >
+
+                        <Nav.Link as={Link} to='/' className='mx-2' >
                             Home
                         </Nav.Link>
-                        <Nav.Link className='mx-2' href="#services" >
+
+                        <Nav.Link as={Link} to='/sobre' className='mx-2'  >
                             Sobre
                         </Nav.Link>
-                        <Nav.Link className='mx-2' href="#about" >
+
+                        <Nav.Link className='mx-2' >
                             Modelos
                         </Nav.Link>
-                        <Nav.Link className='mx-2' href="#services" >
+
+                        <Nav.Link className='mx-2' >
                             Depoimentos
                         </Nav.Link>
-                        <Nav.Link className='mx-2' href="#contact" >
+
+                        <Nav.Link className='mx-2' >
                             Contato
                         </Nav.Link>
                     </Nav>
@@ -55,27 +60,33 @@ const NavigationBar = () => {
                 <Offcanvas show={showOffcanvas} onHide={() => setShowOffcanvas(false)}>
                     <Offcanvas.Header style={{ backgroundColor: '#2D3142', color: 'white', borderBottom: '1px white solid' }} >
                         <Offcanvas.Title>Menu</Offcanvas.Title>
-                        <CloseButton variant="white" onClick={handleLinkClick}/>
+                        <CloseButton variant="white" onClick={handleLinkClick} />
                     </Offcanvas.Header>
                     <Offcanvas.Body style={{ backgroundColor: '#2D3142', color: 'white', }}>
                         <Nav className="me-auto">
-                            <Nav.Link href="#home" onClick={handleLinkClick}>
+
+                            <Nav.Link as={Link} to='/' onClick={handleLinkClick}>
                                 Home
                             </Nav.Link>
-                            <Nav.Link href="#about" onClick={handleLinkClick}>
+
+                            <Nav.Link as={Link} to='/sobre' onClick={handleLinkClick}>
                                 Sobre
                             </Nav.Link>
+
                             <Nav.Link href="#Models" onClick={handleLinkClick}>
                                 Veículos
                             </Nav.Link>
+
                             <Nav.Link href="#contact" onClick={handleLinkClick}>
                                 Depoimentos
                             </Nav.Link>
+
                             <Nav.Link href="#contact" onClick={handleLinkClick}>
                                 Contato
                             </Nav.Link>
-                            <Button style={{backgroundColor: '#161927', border: 'none'}} className="btnLogin mb-2 mt-2">Entrar</Button>
-                            <Button style={{backgroundColor: '#EF8354', border: 'none'}} className="btnRegister">Registrar-se</Button>
+
+                            <Button style={{ backgroundColor: '#161927', border: 'none' }} className="btnLogin mb-2 mt-2">Entrar</Button>
+                            <Button style={{ backgroundColor: '#EF8354', border: 'none' }} className="btnRegister">Registrar-se</Button>
                         </Nav>
                     </Offcanvas.Body>
                 </Offcanvas>

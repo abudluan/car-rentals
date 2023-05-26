@@ -8,6 +8,7 @@ import NavigationBar from './components/NavigationBar/NavigationBar';
 
 import Home from './components/Home';
 import Footer from './components/Footer/Footer';
+import Sobre from './components/Sobre/Sobre';
 
 
 function App() {
@@ -17,9 +18,10 @@ function App() {
       <NavigationBar />
       <Routes>
       <Route exact path='/' element={<Home/>} />
+      <Route exact path='/sobre' element={<Sobre/>} />
       </Routes>
       <BtnScrollToTop />
-      <Footer />
+      
     </Router>
   );
 }
