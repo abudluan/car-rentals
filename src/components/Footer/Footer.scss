@@ -1,6 +1,64 @@
-#footer{
-    background-color:  #2d3142;
+#footer {
+    background-color: #2d3142;
     color: #e2652f;
     text-align: center;
+    padding-bottom: 2em;
+
+    a {
+        text-decoration: none;
+        position: relative;
+        color: #E9EAF6;
+    }
+
+    a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0%;
+        height: 3px;
+        width: 0;
+        background-color: #E9EAF6;
+        transition: 0.3s ease 0s, left 0.3s ease 0s;
+    }
+
+    a:hover::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0%;
+        height: 3px;
+        width: 100%;
+    }
+
+    h2 {
+        font-weight: bold;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .emailinput {
+        width: 18em;
+        text-align: center;
+        border-radius: 5px;
+        padding: 0.5em;
+
     
+    }
+
+    .btnEnviar{
+        width: 18em;
+        margin-bottom: 2em;
+        background-color: #e2652f;
+        border-color: #e2652f;
+    }
+
+    .btnEnviar:hover{
+        background-color: #a84c25;
+        border-color: #a84c25;
+    }
+
+
+
 }
