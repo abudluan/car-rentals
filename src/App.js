@@ -7,6 +7,7 @@ import BtnScrollToTop from './components/uti/BtnScrollToTop';
 import NavigationBar from './components/NavigationBar/NavigationBar';
 
 import Home from './components/Home';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Route exact path='/' element={<Home/>} />
       </Routes>
       <BtnScrollToTop />
+      <Footer />
     </Router>
   );
 }

@@ -331,10 +331,10 @@
     .sec6{
         background-image: url(./img/Home/sec6-bg.png);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position: center;
         background-color: rgb(239, 239, 239);
-        height: 80vh;
+        height: 70vh;
         
 
         @media (max-width:991px){
