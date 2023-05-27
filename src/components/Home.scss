@@ -247,6 +247,9 @@
 
         p{
             text-align: center;
+            @media (max-width: 991px) {
+                text-align: justify;
+            }
         }
 
         .icon{

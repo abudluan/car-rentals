@@ -1,25 +1,30 @@
 .scroll-to-top {
-    position: fixed;
-    bottom: 60px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-    background-color: #EF8354;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    font-size: 20px;
-    cursor: pointer;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .scroll-to-top:hover{
+  position: fixed;
+  bottom: 6vh;
+  right: 2vw;
+  width: 8vw;
+  height: 8vw;
+  background-color: #EF8354;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 5vw;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  &:hover {
     background-color: #ca5928;
     transition: 0.3s ease 0s, left 0.3s ease 0s;
   }
 
-  .scroll-to-top.show {
+  &.show {
     opacity: 1;
   }
-  
+
+  @media (min-width:991px){
+    width: 4vw;
+  height: 4vw;
+  font-size: 2vw;
+  }
+}
