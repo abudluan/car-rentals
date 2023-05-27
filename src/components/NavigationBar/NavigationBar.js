@@ -33,16 +33,12 @@ const NavigationBar = () => {
                             Home
                         </Nav.Link>
 
+                        <Nav.Link as={Link} to='/modelos' className='mx-2' >
+                            Veículos
+                        </Nav.Link>
+
                         <Nav.Link as={Link} to='/sobre' className='mx-2'  >
                             Sobre
-                        </Nav.Link>
-
-                        <Nav.Link className='mx-2' >
-                            Modelos
-                        </Nav.Link>
-
-                        <Nav.Link className='mx-2' >
-                            Depoimentos
                         </Nav.Link>
 
                         <Nav.Link className='mx-2' >
@@ -69,16 +65,12 @@ const NavigationBar = () => {
                                 Home
                             </Nav.Link>
 
-                            <Nav.Link as={Link} to='/sobre' onClick={handleLinkClick}>
-                                Sobre
-                            </Nav.Link>
-
-                            <Nav.Link href="#Models" onClick={handleLinkClick}>
+                            <Nav.Link as={Link} to='/modelos' onClick={handleLinkClick}>
                                 Veículos
                             </Nav.Link>
 
-                            <Nav.Link href="#contact" onClick={handleLinkClick}>
-                                Depoimentos
+                            <Nav.Link as={Link} to='/sobre' onClick={handleLinkClick}>
+                                Sobre
                             </Nav.Link>
 
                             <Nav.Link href="#contact" onClick={handleLinkClick}>

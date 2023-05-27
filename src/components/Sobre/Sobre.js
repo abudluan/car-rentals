@@ -55,8 +55,7 @@ const Sobre = () => {
             </div>
 
         </section>
-    )
-
+    );
 }
 
 export default Sobre;
