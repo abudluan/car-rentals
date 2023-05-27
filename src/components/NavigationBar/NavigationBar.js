@@ -41,7 +41,7 @@ const NavigationBar = () => {
                             Sobre
                         </Nav.Link>
 
-                        <Nav.Link className='mx-2' >
+                        <Nav.Link as={Link} to='/contato' className='mx-2' >
                             Contato
                         </Nav.Link>
                     </Nav>
@@ -73,7 +73,7 @@ const NavigationBar = () => {
                                 Sobre
                             </Nav.Link>
 
-                            <Nav.Link href="#contact" onClick={handleLinkClick}>
+                            <Nav.Link as={Link} to='/contato' onClick={handleLinkClick}>
                                 Contato
                             </Nav.Link>
 

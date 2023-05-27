@@ -10,6 +10,7 @@ import Home from './components/Home';
 import Footer from './components/Footer/Footer';
 import Sobre from './components/Sobre/Sobre';
 import Modelos from './components/Modelos/Modelos';
+import Contato from './components/Contato/Contato';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Route exact path='/' element={<Home/>} />
       <Route exact path='/sobre' element={<Sobre/>} />
       <Route exact path='/modelos' element={<Modelos/>} />
+      <Route exact path='/contato' element={<Contato/>} />
       </Routes>
       <BtnScrollToTop />
       <Footer />

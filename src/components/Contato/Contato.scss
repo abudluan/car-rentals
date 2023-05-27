@@ -1,0 +1,58 @@
+#contato {
+    padding-bottom: 2em;
+
+    @media (min-width:1360px){
+        padding-top: 5em;
+        padding-bottom: 11em;
+    }
+
+    h1 {
+        margin-top: 2em;
+        font-weight: bold;
+        text-align: justify;
+
+    }
+
+    h2, h1, h4{
+
+        @media (max-width: 991px){
+            text-align: center;
+        }
+       
+
+        .iconPhone{
+            color: #e2652f;
+            
+        }
+    }
+    
+
+    .title {
+        font-weight: bold;
+    }
+
+    .form{
+        border-radius: 0;
+        background-color: #F2F2F2;
+        color: white;
+        
+    }
+
+    .btnEnviar {
+        background-color: #e2652f;
+        border-color: #e2652f;
+        padding: 0.8em;
+        width: 100%;
+
+        .icon{
+            font-size: 1.5em;
+            margin-top: -0.2em;
+        }
+    }
+
+    .btnEnviar:hover{
+        background-color: #c15222;
+        border-color: #c15222;
+    }
+
+}
