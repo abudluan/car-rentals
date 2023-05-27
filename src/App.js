@@ -21,7 +21,7 @@ function App() {
       <Route exact path='/sobre' element={<Sobre/>} />
       </Routes>
       <BtnScrollToTop />
-      
+      <Footer />
     </Router>
   );
 }

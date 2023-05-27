@@ -102,9 +102,6 @@ const Home = () => {
         setIsMouseDown(false);
     };
 
-
-
-
     AOS.init();
 
     return (

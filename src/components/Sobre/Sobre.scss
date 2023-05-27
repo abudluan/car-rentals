@@ -10,13 +10,36 @@
     h1{
         text-align: center;
         font-weight: bold;
-        margin-top: 1em;
+        margin-top: 0.5em;
         color: #2D3142;
     }
 
-    p{
+    h3{
         text-align: center;
         color: #2D3142;
+        padding-bottom: 0.5em;
+        border-bottom: #EF8354 5px solid;
+    }
+
+    .sec2{
+        margin-top: 2em;
+        text-align: center; 
+        padding-bottom: 2em;
+        h5{
+            text-align: justify;
+
+            img{
+                float: left;
+                max-height: 10em;
+                margin-right: 1em;
+                margin-top: 0.3em;
+
+                @media (max-width:991px){
+                    margin-bottom: 1.5em;
+                }
+            }
+            
+        }
     }
 
 }
