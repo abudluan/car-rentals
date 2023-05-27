@@ -71,7 +71,7 @@ const Modelos = () => {
 
                 <Row>
 
-                    <Col className="Col1 mb-4">
+                    <Col md className="Col1 mb-4">
                         <Card>
                             <Carousel indicators={false}>
                                 <Carousel.Item>
@@ -148,7 +148,7 @@ const Modelos = () => {
 
                                 <Card.Text className="textCard">
 
-                                    <Row className="container">
+                                    <Row>
                                         <Col>
                                             <MdAttachMoney />
                                             <br />
@@ -165,6 +165,7 @@ const Modelos = () => {
                                             <br />
                                             Milhas ilimitadas
                                         </Col>
+                                        
                                     </Row>
 
                                 </Card.Text>
@@ -175,8 +176,8 @@ const Modelos = () => {
                         </Card>
                     </Col>
 
-                    <Col className="Col2 mb-4">
-                        <Card>
+                    <Col md className="Col2 mb-4">
+                        <Card >
                             <Carousel indicators={false}>
                                 <Carousel.Item>
                                     <img
@@ -244,7 +245,7 @@ const Modelos = () => {
                                 </div>
                                 <Card.Text className="textCard">
 
-                                    <Row className="container">
+                                    <Row>
                                         <Col>
                                             <MdAttachMoney />
                                             <br />
@@ -271,8 +272,8 @@ const Modelos = () => {
                         </Card>
                     </Col>
 
-                    <Col className="Col3 mb-4">
-                        <Card>
+                    <Col md className="Col3 mb-4">
+                        <Card >
                             <Carousel indicators={false}>
                                 <Carousel.Item>
                                     <img
@@ -319,7 +320,7 @@ const Modelos = () => {
                                 </div>
                                 <Card.Text className="textCard">
 
-                                    <Row className="container">
+                                    <Row>
                                         <Col>
                                             <MdAttachMoney />
                                             <br />
@@ -348,7 +349,7 @@ const Modelos = () => {
                 </Row>
 
                 <Row>
-                    <Col className="Col4 mb-4">
+                    <Col md className="Col4 mb-4">
                         <Card>
                             <Carousel indicators={false}>
                                 <Carousel.Item>
@@ -410,7 +411,7 @@ const Modelos = () => {
                                 </div>
                                 <Card.Text className="textCard">
 
-                                    <Row className="container">
+                                    <Row>
                                         <Col>
                                             <MdAttachMoney />
                                             <br />
@@ -437,7 +438,7 @@ const Modelos = () => {
                         </Card>
                     </Col>
 
-                    <Col className="Col5 mb-4">
+                    <Col md className="Col5 mb-4">
                         <Card>
                             <Carousel indicators={false}>
                                 <Carousel.Item>
@@ -485,7 +486,7 @@ const Modelos = () => {
                                 </div>
                                 <Card.Text className="textCard">
 
-                                    <Row className="container">
+                                    <Row>
                                         <Col>
                                             <MdAttachMoney />
                                             <br />
@@ -512,7 +513,7 @@ const Modelos = () => {
                         </Card>
                     </Col>
 
-                    <Col className="Col6 mb-4">
+                    <Col md className="Col6 mb-4">
                         <Card>
                             <Carousel indicators={false}>
                                 <Carousel.Item>
@@ -561,7 +562,7 @@ const Modelos = () => {
                                 </div>
                                 <Card.Text className="textCard">
 
-                                    <Row className="container">
+                                    <Row>
                                         <Col>
                                             <MdAttachMoney />
                                             <br />
