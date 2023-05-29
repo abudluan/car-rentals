@@ -27,7 +27,7 @@ const Contato = () => {
                 <Row>
 
                     <Col md>
-                        <h1>Precisa de tirar alguma dúvida?</h1>
+                        <h1>Precisa tirar alguma dúvida ou dar alguma sugestão?</h1>
                         <h4 className="mb-3">Entre em contato pelo nosso email ou telefone</h4>
                         <h2> <BsFillTelephoneFill className="iconPhone" />  (99) 99999-9999</h2>
                     </Col>
