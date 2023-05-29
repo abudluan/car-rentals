@@ -2,19 +2,17 @@
   position: fixed;
   bottom: 6vh;
   right: 2vw;
-  width: 8vw;
-  height: 8vw;
-  background-color: #EF8354;
-  color: #fff;
+  width: 5vw;
+  height: 5vw;
+  color: #EF8354;
   border: none;
-  border-radius: 50%;
-  font-size: 5vw;
+  font-size: 3.5vw;
   cursor: pointer;
   opacity: 0;
   transition: opacity 0.3s ease;
+  background-color: transparent;
 
   &:hover {
-    background-color: #ca5928;
     transition: 0.3s ease 0s, left 0.3s ease 0s;
   }
 
@@ -22,9 +20,11 @@
     opacity: 1;
   }
 
-  @media (min-width:991px){
-    width: 4vw;
-  height: 4vw;
-  font-size: 2vw;
+  @media (max-width: 991px){
+    width: 12vw;
+    height: 12vw;
+    font-size: 11vw;
   }
+
+
 }
