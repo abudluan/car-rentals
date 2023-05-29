@@ -34,11 +34,11 @@ const Contato = () => {
 
                     <Col md>
 
-                        <Form.Label className="mt-5" htmlFor="inputText"><span className="title">Nome completo</span></Form.Label>
+                        <Form.Label className="mt-5" htmlFor="inputText" ><span className="title">Nome completo</span></Form.Label>
                         <Form.Control
                             type="text"
                             id="inputText"
-                            placeholder="Ex: Luan Abud"
+                            placeholder="Digite seu nome"
                             className="mb-4 form"
                             required
                         />
@@ -46,7 +46,7 @@ const Contato = () => {
                         <Form>
                             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                                 <Form.Label><span className="title">Email</span></Form.Label>
-                                <Form.Control required type="email" placeholder="name@example.com" className="mb-4 form" value={email} onChange={handleInputChange} />
+                                <Form.Control required type="email" placeholder="email@exemplo.com" className="mb-4 form" value={email} onChange={handleInputChange} />
                                 {!isValidEmail && <p>Email inválido!</p>}
                             </Form.Group>
                             

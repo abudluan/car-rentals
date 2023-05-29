@@ -33,7 +33,7 @@ const Footer = () => {
                     </Col>
 
                     <Col md>
-                        <h2>Inscreva-se</h2>
+                        <h2>Notícias</h2>
                         <p>Inscreva-se por e-mail e receba as últimas novidades e promoções</p>
 
                         
