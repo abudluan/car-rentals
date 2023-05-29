@@ -34,8 +34,7 @@
     .form{
         border-radius: 0;
         background-color: #F2F2F2;
-        color: white;
-        
+        color: black;
     }
 
     .btnEnviar {
@@ -46,13 +45,19 @@
 
         .icon{
             font-size: 1.5em;
-            margin-top: -0.2em;
+            margin-top: -0.17em;
         }
     }
 
     .btnEnviar:hover{
         background-color: #c15222;
         border-color: #c15222;
+    }
+
+    p{
+        color: red;
+        padding: 0;
+        margin-top: -1.3em;
     }
 
 }
