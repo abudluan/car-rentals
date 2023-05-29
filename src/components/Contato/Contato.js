@@ -29,7 +29,7 @@ const Contato = () => {
                     <Col md>
                         <h1>Precisa tirar alguma dúvida ou dar alguma sugestão?</h1>
                         <h4 className="mb-3">Entre em contato pelo nosso email ou telefone</h4>
-                        <h2> <BsFillTelephoneFill className="iconPhone" />  (99) 99999-9999</h2>
+                        <h2 className="mt-5"> <BsFillTelephoneFill className="iconPhone" />  (99) 99999-9999</h2>
                     </Col>
 
                     <Col md>

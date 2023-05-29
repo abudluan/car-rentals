@@ -1,10 +1,25 @@
-import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import './Footer.scss';
 import { BsTelephoneFill } from 'react-icons/bs';
-import { IoMdMail } from 'react-icons/io';
 import { FaCode } from 'react-icons/fa';
+import { IoMdMail } from 'react-icons/io';
+
 const Footer = () => {
+
+    const [email, setEmail] = useState('');
+    const [isValidEmail, setIsValidEmail] = useState(true);
+
+    const handleInputChange = (e) => {
+        setEmail(e.target.value);
+    };
+
+    const validateEmail = () => {
+        const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+        const isValid = emailRegex.test(email);
+        setIsValidEmail(isValid);
+    };
+
     return (
         <footer id="footer">
             <Container >
@@ -16,8 +31,10 @@ const Footer = () => {
                         <p>Entre em contato conosco.</p>
 
                         <BsTelephoneFill className="mx-2" /> (99) 9999-9999
-                        <br />
-                        <IoMdMail className="mx-2" /> carrental@gmail.com
+                        <br/>
+                        ou
+                        <br/>
+                        <IoMdMail /> carrental@gmail.com
 
                     </Col>
 
@@ -26,7 +43,9 @@ const Footer = () => {
                         <p>
                             Seg - Sex: 8:00 - 18:00
                             <br />
+                            <br />
                             Sab: 9:00 - 17:00
+                            <br />
                             <br />
                             Dom: Fechado
                         </p>
@@ -36,10 +55,13 @@ const Footer = () => {
                         <h2>Notícias</h2>
                         <p>Inscreva-se por e-mail e receba as últimas novidades e promoções</p>
 
-                        
-                        <input className="emailinput" type="email" placeholder="Endereço de Email"></input>
-                        <br/>
-                        <Button className="btnEnviar mt-2">Enviar</Button>
+                        <Form.Group  controlId="exampleForm.ControlInput1">
+                            <Form.Label><span className="title">Email</span></Form.Label>
+                            <Form.Control required type="email" placeholder="email@exemplo.com" className="emailinput" value={email} onChange={handleInputChange} />
+                            {!isValidEmail && <p className="mt-1">Email inválido!</p>}
+                        </Form.Group>
+
+                        <Button className="btnEnviar mt-2" onClick={validateEmail}>Enviar</Button>
                     </Col>
 
                 </Row>
