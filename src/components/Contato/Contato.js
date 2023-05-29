@@ -52,8 +52,8 @@ const Contato = () => {
                             
 
                             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                <Form.Label><span className="title">Tire sua dúvida</span></Form.Label>
-                                <Form.Control className="mb-4 pb-5 form" as="textarea" placeholder="Escreva aqui sua dúvida..." rows={3} required />
+                                <Form.Label><span className="title">Fale com a gente</span></Form.Label>
+                                <Form.Control className="mb-4 pb-5 form" as="textarea" placeholder="Escreva sua dúvida ou sugestão..." rows={3} required />
                             </Form.Group>
                         </Form>
 
