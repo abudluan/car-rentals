@@ -66,7 +66,7 @@ const Footer = () => {
 
                 </Row>
 
-                <FaCode /> Desenvolvido por <a href="https://euabud.netlify.app/" target="_blank">Luan Abud</a>
+                <FaCode /> Desenvolvido por <a href="https://abudluan.vercel.app" target="_blank">Luan Abud</a>
 
             </Container>
         </footer>
