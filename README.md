@@ -9,7 +9,7 @@ O Go Drive Car Rental é um site de aluguel de carros de luxo, criado para simpl
 
 ### Como Executar Localmente
 Após clonar o repositório siga os passos:
-1. Instale as dependências: <code>npm install</code>
+1. Entre na pasta do projeto e instale as dependências: <code>npm install</code>
 2. Inicie a aplicação: <code>npm start</code>
 
 > Status do Projeto: Concluido :heavy_check_mark:
